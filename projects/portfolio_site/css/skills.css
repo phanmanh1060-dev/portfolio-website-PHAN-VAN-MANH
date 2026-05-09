@@ -1,0 +1,54 @@
+/* ==================== SKILLS SECTION ==================== */
+.skills-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.skills-section h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+    color: var(--color-dark);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 0.8rem;
+    font-weight: 600;
+    color: var(--color-dark);
+}
+
+.skill-bar {
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-secondary));
+    border-radius: 50px;
+    transition: width 1.5s ease-in-out;
+    width: 0; /* Bắt đầu từ 0 để animate */
+}
+
+/* Animation khi load */
+.skill-progress[style*="95%"] { animation: progress 1.5s ease-in-out forwards; }
+.skill-progress[style*="90%"]  { animation: progress 1.5s ease-in-out 0.2s forwards; }
+.skill-progress[style*="85%"]  { animation: progress 1.5s ease-in-out 0.4s forwards; }
+.skill-progress[style*="80%"]  { animation: progress 1.5s ease-in-out 0.6s forwards; }
+
+@keyframes progress {
+    to { width: var(--width, 100%); }
+}
