@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/portfolio.css">
         <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/footer.css">
-</head>
-<body>
-    
+
+    </head>        
     <body>
+    
     <!-- HEADER -->
     <header class="header">
         <div class="container header__inner">
@@ -59,20 +59,21 @@
         </div>
     </section>
     <!-- ABOUT SECTION -->
-    <section id="about" class="about-section">
-        <div class="container">
-            <div class="about-grid">
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/400x400/6366f1/ffffff?text=Your+Photo" alt="Profile Photo">
-                </div>
-                <div class="about-content">
-                    <h2>About Me</h2>
-                    <p class="lead">I'm a passionate developer with 3+ years of experience building web applications that make a difference.</p>
-                    <p>Specialized in Frontend development with React and Vue. Also experienced in Backend with Node.js and Python.</p>
-                </div>
+     <!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image">
+                <img src="images/profile.jpg" alt="Phan Văn Mạnh">
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <p class="lead">I'm a passionate developer with 3+ years of experience building web applications that make a difference.</p>
+                <p>Specialized in Frontend development with React and Vue. Also experienced in Backend with Node.js and Python.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- SKILLS SECTION -->
     <section id="skills" class="skills-section">
@@ -98,72 +99,57 @@
             </div>
         </div>
     </section>
-        <!-- PORTFOLIO SECTION -->
-    <section id="portfolio" class="portfolio-section">
-        <div class="container">
-            <h2>My Portfolio</h2>
-            
-            <!-- Filter buttons -->
-            <div class="portfolio-filters">
-                <button class="filter-btn active">All</button>
-                <button class="filter-btn">Web</button>
-                <button class="filter-btn">Mobile</button>
-                <button class="filter-btn">Design</button>
-            </div>
+    <!-- Portfolio Grid -->
+<div class="portfolio-grid">
 
-            <!-- Portfolio Grid -->
-            <div class="portfolio-grid">
-                <a href="#lightbox-1" class="portfolio-item" data-category="web">
-                    <img src="https://via.placeholder.com/600x400/6366f1/ffffff?text=Project+1" alt="E-commerce Website">
-                    <div class="portfolio-overlay">
-                        <h3>E-Commerce Website</h3>
-                        <p>React + Node.js</p>
-                    </div>
-                </a>
-
-                <a href="#lightbox-2" class="portfolio-item" data-category="mobile">
-                    <img src="https://via.placeholder.com/600x400/10b981/ffffff?text=Project+2" alt="Mobile Banking App">
-                    <div class="portfolio-overlay">
-                        <h3>Mobile Banking App</h3>
-                        <p>Flutter + Firebase</p>
-                    </div>
-                </a>
-
-                <a href="#lightbox-3" class="portfolio-item" data-category="web">
-                    <img src="https://via.placeholder.com/600x400/8b5cf6/ffffff?text=Project+3" alt="Dashboard UI">
-                    <div class="portfolio-overlay">
-                        <h3>Admin Dashboard</h3>
-                        <p>Vue.js + Tailwind</p>
-                    </div>
-                </a>
-
-                <!-- Thêm 3 project nữa (tổng 6) -->
-                <a href="#lightbox-4" class="portfolio-item" data-category="design">
-                    <img src="https://via.placeholder.com/600x400/f97316/ffffff?text=Project+4" alt="Brand Identity">
-                    <div class="portfolio-overlay">
-                        <h3>Brand Identity</h3>
-                        <p>UI/UX Design</p>
-                    </div>
-                </a>
-
-                <a href="#lightbox-5" class="portfolio-item" data-category="mobile">
-                    <img src="https://via.placeholder.com/600x400/ef4444/ffffff?text=Project+5" alt="Fitness App">
-                    <div class="portfolio-overlay">
-                        <h3>Fitness Tracker</h3>
-                        <p>React Native</p>
-                    </div>
-                </a>
-
-                <a href="#lightbox-6" class="portfolio-item" data-category="web">
-                    <img src="https://via.placeholder.com/600x400/6366f1/ffffff?text=Project+6" alt="Blog Platform">
-                    <div class="portfolio-overlay">
-                        <h3>Blog Platform</h3>
-                        <p>Next.js + Supabase</p>
-                    </div>
-                </a>
-            </div>
+    <a href="#lightbox-1" class="portfolio-item" data-category="web">
+        <img src="images/project-1.jpg" alt="E-commerce Website">
+        <div class="portfolio-overlay">
+            <h3>E-Commerce Website</h3>
+            <p>React + Node.js</p>
         </div>
-    </section>
+    </a>
+
+    <a href="#lightbox-2" class="portfolio-item" data-category="mobile">
+        <img src="images/project-2.jpg" alt="Mobile Banking App">
+        <div class="portfolio-overlay">
+            <h3>Mobile Banking App</h3>
+            <p>Flutter + Firebase</p>
+        </div>
+    </a>
+
+    <a href="#lightbox-3" class="portfolio-item" data-category="web">
+        <img src="images/project-3.jpg" alt="Dashboard UI">
+        <div class="portfolio-overlay">
+            <h3>Admin Dashboard</h3>
+            <p>Vue.js + Tailwind</p>
+        </div>
+    </a>
+
+    <a href="#lightbox-4" class="portfolio-item" data-category="design">
+        <img src="images/project-4.jpg" alt="Brand Identity">
+        <div class="portfolio-overlay">
+            <h3>Brand Identity</h3>
+            <p>UI/UX Design</p>
+        </div>
+    </a>
+
+    <a href="#lightbox-5" class="portfolio-item" data-category="mobile">
+        <img src="images/project-5.jpg" alt="Fitness App">
+        <div class="portfolio-overlay">
+            <h3>Fitness Tracker</h3>
+            <p>React Native</p>
+        </div>
+    </a>
+
+    <a href="#lightbox-6" class="portfolio-item" data-category="web">
+        <img src="images/project-6.jpg" alt="Blog Platform">
+        <div class="portfolio-overlay">
+            <h3>Blog Platform</h3>
+            <p>Next.js + Supabase</p>
+        </div>
+    </a>
+</div>
         <!-- CONTACT SECTION -->
     <section id="contact" class="contact-section">
         <div class="container">
