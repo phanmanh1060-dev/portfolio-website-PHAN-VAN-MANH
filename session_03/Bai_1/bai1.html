@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lý sinh viên - K66</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Quản lý sinh viên</h1>
+
+        <div class="thong-ke">
+            <p>Tổng số sinh viên: <span id="tong-sv">0</span></p>
+            <p>Điểm trung bình lớp: <span id="diem-tb-lop">0</span></p>
+        </div>
+
+        <div class="thao-tac">
+            <button id="nut-mo-form">Thêm sinh viên</button>
+            <span id="thong-bao"></span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Mã SV</th>
+                    <th>Họ và tên</th>
+                    <th>Ngày sinh</th>
+                    <th>Lớp học</th>
+                    <th>Email</th>
+                    <th>Điểm TB</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody id="danh-sach-sv">
+                <!-- Dữ liệu đổ vào đây -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Popup Form (Luồng B sẽ dùng, hiện tại để ẩn) -->
+    <div id="popup-form" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="tieude-form">Thêm sinh viên mới</h3>
+            <form id="form-sinh-vien">
+                <input type="hidden" id="form-trang-thai" value="">
+                <p>Mã SV: <input type="text" id="inp-ma" required></p>
+                <p>Họ tên: <input type="text" id="inp-ten" required></p>
+                <p>Ngày sinh: <input type="date" id="inp-ngaysinh" required></p>
+                <p>Lớp học: <input type="text" id="inp-lop" required></p>
+                <p>Email: <input type="email" id="inp-email" required></p>
+                <p>Điểm TB: <input type="number" id="inp-diem" step="0.1" min="0" max="10" required></p>
+                <div class="nhom-nut">
+                    <button type="submit">Lưu lại</button>
+                    <button type="button" id="nut-dong-form">Hủy/Đóng</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app1.js"></script>
+</body>
+</html>

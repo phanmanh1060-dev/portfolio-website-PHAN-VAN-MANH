@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2: Quản lý công việc</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="wrapper">
+        <h1>Quản lý công việc cá nhân</h1>
+
+        <!-- Thống kê -->
+        <div class="thong-ke">
+            <p>Tổng số công việc: <span id="tong-cv">0</span></p>
+            <p>Đã hoàn thành: <span id="cv-xong">0</span></p>
+            <p>Chưa hoàn thành: <span id="cv-chua-xong">0</span></p>
+        </div>
+
+        <!-- Nút thêm & Thông báo -->
+        <div class="thao-tac">
+            <button id="nut-them-cv">Thêm công việc mới</button>
+            <span id="alert-box"></span>
+        </div>
+
+        <!-- Vùng hiển thị danh sách card động -->
+        <div id="vung-danh-sach-cv"></div>
+    </div>
+
+    <!-- Popup Form (Mặc định ẩn) -->
+    <div id="popup-task" class="modal hidden">
+        <div class="modal-content">
+            <h3 id="form-title">Tạo công việc mới</h3>
+            <form id="form-task">
+                <input type="hidden" id="task-index" value="">
+                <p>Tiêu đề: <input type="text" id="inp-tieude" required></p>
+                <p>Mô tả ngắn: <textarea id="inp-mota" required></textarea></p>
+                <p>Hạn hoàn thành: <input type="date" id="inp-han" required></p>
+                <p>Mức ưu tiên: 
+                    <select id="inp-uutiendoc">
+                        <option value="Cao">Cao</option>
+                        <option value="Trung bình">Trung bình</option>
+                        <option value="Thấp">Thấp</option>
+                    </select>
+                </p>
+                <div class="nhom-nut">
+                    <button type="submit">Lưu lại</button>
+                    <button type="button" id="nut-huy-task">Hủy</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="app2.js"></script>
+</body>
+</html>
